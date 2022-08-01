@@ -1,3 +1,6 @@
 *.exe
 *.pdb
 zig-*
+*.obj
+*.o
+*.a
