@@ -181,6 +181,7 @@ i32 main()
         const GLint attribute_pos = glGetAttribLocation(shader_program, "pos");
         
         printf("before\n");
+        //THE BUG--------------------------
         glVertexAttribPointer(attribute_pos, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)OffsetOf(Vertex, pos));
         printf("after\n");
     }
