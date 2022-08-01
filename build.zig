@@ -5,7 +5,7 @@ pub fn build(b: *Builder) void {
     const target = b.standardTargetOptions(.{});
     const mode = b.standardReleaseOptions();
 
-    const exe = b.addExecutable("dsp_bench", null);
+    const exe = b.addExecutable("main_zig", null);
     exe.setTarget(target);
     exe.setBuildMode(mode);
     if(mode == .Debug)
@@ -31,5 +31,6 @@ pub fn build(b: *Builder) void {
 
     exe.defineCMacro("STRSAFE_NO_DEPRECATE", "");
     exe.defineCMacro("_CRT_SECURE_NO_WARNINGS", "");
+    exe.setOutputDir(".");
     exe.install();
 }

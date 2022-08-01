@@ -1,0 +1,1 @@
+zig build -Dtarget=native-native-msvc
