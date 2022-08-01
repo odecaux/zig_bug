@@ -1,0 +1,1 @@
+cl main.cpp /std:c++20 Ole32.lib User32.lib opengl32.lib Gdi32.lib /Femain_cl.exe
